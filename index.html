@@ -23,6 +23,28 @@
 <!-- CUERPO -->
 <body>
     <main>
+        <!-- Barra de navegacion -->
+        <nav class="menu">
+        <div class="foto">
+            <p><img src=" " alt="Pipetboy" class="foto"></p>
+        </div>
+        <div class="contenedor contenedor-menu">
+            <a href="#about-title">Sobre mí</a>
+            <a href="#projectos">Proyectos</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#contact-title">Contacto</a>
+        </div>
+        <!-- Cambiar idioma de la web -->
+        <div class="idiomas">
+            <div class="esp idioma">
+                <img src="img/español.png" class="bandera active" alt="Español" title="Español">
+            </div>
+            <div class="eng idioma">
+                <a href=" "><img src="img/english.png" class="bandera" alt="English" title="Inglés"></a>
+            </div>
+        </div>
+        </nav>
+        <!-- INICIO -->
         <div id="welcome">
             <!-- Presentacion -->
             <div id="welcome-image"><div></div></div>
@@ -32,10 +54,12 @@
                 <h4><span>Programador Junior</span></h4>
                 <h5>"si se puede imaginar , se puede crear"</a>
             </div>
-            <!-- Cuadro para ingresar mas rapido -->
-            <a id="MisProjectos" href="#projectos">Mis projectos!</a>
-            </div>
 
+
+        <!-- Proyectos -->
+        <!-- Cuadro para ingresar mas rapido -->
+        <a id="MisProjectos" href="#projectos">Mis projectos!</a>
+        </div>
         <div id="projectos">
             <a id="projects-title">Trabajos hechos por mi</a>
             <div id="projects-container">
@@ -70,6 +94,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Sobre mi: -->
         <div id="about">
             <a id="about-title">Sobre mi</a>
@@ -98,6 +123,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Contacto -->
         <div id="contact">
             <a id="contact-title">Contact</a>
@@ -107,25 +133,24 @@
                 <a class="button" href="mailto:Felipe.fernandez.h@usach.cl" target="_blank" rel="noopener noreferrer">EMAIL</a>
             </div>
         </div>
-        <!--Crear un main menu -->
         </main>
+
+        <!--Crear pie de pagina -->
+        
         <footer>
-            <table>
-                <tr>
-                    <td></td>
-                    <td><a class="menu">MENU</a></td>
-                </tr>
-            </table>
-            <div class="main-menu">
-                <div class="menu-items">
-                    <a class="menu-item" href="#welcome">Inicio</a>
-                    <a class="menu-item" href="#projects">Projectos</a>
-                    <a class="menu-item" href="#about">¿Quien Soy?</a>
-                    <a class="menu-item" href="#contact">Contacto</a>
-                    <br><br><br><br>
-                    <h1 id="menu-close" class="main-menu-close"></h1>
-                </div>
+            <div class="contenedor">
+            <div class="redes-sociales" id="contacto">
+
+                <a href="https://www.instagram.com/pipetboy2001/" target="_blank" class="social instagram" title="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                
+                
+                <a href="https://github.com/Pipetboy/" target="_blank" class="social github" title="GitHub"><i
+                        class="fab fa-github"></i></a>
             </div>
+        </div>
+        <p class="autor">Felipe Fernandez Hernandez </p>
+        <span><i class="boton-arriba fa fa-chevron-up" id="boton-arriba" aria-hidden="true"></i></span>
         </footer>
     </body>
 </html>
