@@ -1,0 +1,495 @@
+
+/*Color website*/
+:root {
+    --white: #F5F5F5;
+    --greyShadow: #202020;
+    --greyDark: #404040;
+    --grey: #606060;
+    --greyClear: #6e6e6e;
+    --black: #101010;
+}
+
+/*Cuerpo*/
+body {
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/*Scroll*/
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    outline: none;
+}
+
+/*Boton*/
+.button {
+    display: inline-block;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    padding: 10px 30px;
+    border: 3px solid var(--white);
+    font-weight: bold;
+    font-size: 24px;
+    transition: background-color, color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.button:hover {
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;
+}
+
+/*Seccion de bienvenida*/
+#welcome {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    height: calc(100vh - 60px);
+    min-height: 750px;
+    margin: 0;
+    overflow: hidden;
+}
+
+#welcome-image {
+    display: block;
+    width: 200px;
+    height: 200px;
+    padding: 8px;
+    border: 3px solid var(--white);
+    margin: auto;
+    margin-top: 12vh;
+}
+
+/* Foto de perfil */
+#welcome-image div {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-image: url("/content/images/MiFotoDePerfil.jpg");
+    /*background-size: cover;*/
+    /*filter: grayscale(1);*/
+}
+
+#welcome-text {
+    padding: 0px;
+    padding-top: 40px;
+}
+
+#welcome-text h4 {
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+
+#welcome-text h4 span {
+    color: var(--grey);
+}
+
+#welcome-text a {
+    display: block;
+    color: var(--grey);
+}
+
+
+
+/* Boton mis projectos */
+#MisProjectos {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 30px;
+    border: 3px solid var(--white);
+    font-weight: bold;
+    font-size: 24px;
+    transition: background-color, color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    text-decoration: none;
+    color: var(--white);
+}
+/*Mys trabajos*/
+#check-my-work:hover {
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;
+}
+
+/*Seccion de projectos*/
+/**/
+#projects {
+    margin: 0;
+    padding: 30px 30px;
+}
+
+#projects-title {
+    display: block;
+    padding-top: 8vh;
+    margin-bottom: 60px;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--greyShadow);
+    width: 22%;
+    min-width: 320px;
+    max-height: 999px;
+    margin: 40px 0px;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+    padding: 40px;
+    padding-bottom: 70px;
+    margin: auto;
+    margin-top: 0px;
+    text-align: center;
+    
+}
+
+.project-container:hover {
+    background-color: #303030;
+}
+
+
+.project-container.open img {
+    cursor: pointer;
+}
+
+.project-container img {
+    display: block;
+    margin: auto;
+    width: 76%;
+    min-width: 320px;
+}
+
+.project-container p {
+    margin-bottom: 1.5em;
+    min-width: 320px;
+    margin: auto;
+}
+
+.project-container a {
+    color: var(--grey);
+}
+
+.project-container .button {
+    display: block;
+    color: var(--white);
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.project-container .button:hover {
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;
+}
+
+.project-container p strong {
+    font-size: 1.4rem;
+}
+
+.project-container p .strong-br {
+    display: block;
+    content: "";
+    margin-top: 8px;
+}
+
+
+/*Seccion Sobre mi*/
+
+#about {
+    display: block;
+    margin-bottom: 60px;
+}
+
+#about-title {
+    display: block;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+#about-data {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#about-data div {
+    width: 30%;
+    min-width: 320px;
+    padding: 40px;
+    margin: 40px;
+    background-color: var(--greyShadow);
+}
+
+#about-me {
+    text-align: center;
+}
+
+#about-me strong {
+    text-transform: uppercase;
+    color: var(--greyClear);
+}
+
+#about-me .button {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+#skills h2 {
+    display: block;
+    text-align: center;
+}
+
+#skills p {
+    color: var(--greyClear);
+    text-align: center;
+}
+
+#skills p strong {
+    color: var(--white);
+}
+
+#skills p span {
+    color: var(--greyDark);
+}
+
+/*Contactame */
+
+#contact {
+    display: block;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+
+}
+
+#contact-title {
+    display: block;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#contact-container {
+    display: block;
+    background-color: var(--greyShadow);
+    width: 22%;
+    min-width: 320px;
+    max-height: 999px;
+    margin: 40px 0px;
+    padding: 40px;
+    padding-bottom: 70px;
+    margin: auto;
+    margin-top: 90px;
+    text-align: center;
+}
+
+#contact-container .button {
+    display: block;
+    margin-top: 60px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#contact-container .button:last-of-type {
+    margin: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/*Modificar la barra de navegacion*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #22223d;
+  border-radius: 5px;
+}
+
+
+/*Tamaño del menu*/
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.titulo {
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+
+
+/** Media Queries **/
+/** Media Queries **/
+@media only screen and (min-width: 48rem) {
+  .menu {
+    grid-template-columns: 10% auto 10%;
+  }
+  .menu .contenedor-menu a {
+    font-size: 1.1rem;
+  }
+  .menu .idiomas {
+    display: grid;
+    flex-direction: column;
+  }
+
+  .header {
+    height: 100vh;
+  }
+  .header .contenedor-header {
+    height: 100%;
+  }
+  .header .contenedor-header .nombre {
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+  }
+  .header .contenedor-header h2 {
+    min-width: 35.375rem;
+    max-width: 35.375rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+  }
+}
+.main .proyectos .contenedor-proyectos .proyecto .foto a img {
+  filter: grayscale(0);
+  transition: all 0.5s ease-in-out;
+}
+.main .proyectos .contenedor-proyectos .proyecto .foto a img:hover {
+  filter: grayscale(100);
+}
+
+.menu {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-top: 0.1rem solid rgba(86, 86, 86, 0.5);
+  border-bottom: 0.1rem solid rgba(86, 86, 86, 0.5);
+  position: sticky;
+  z-index: 11;
+  top: 0;
+  display: grid;
+  grid-template-columns: 10% auto;
+}
+.menu .foto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.menu .foto img {
+  width: 2.5rem;
+  border-radius: 50%;
+  margin-right: 1.25rem;
+}
+.menu .contenedor-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+}
+.menu .contenedor-menu a {
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+.menu .contenedor-menu a:hover {
+  color: #c90c0f;
+}
+.menu .idiomas {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(1.5625rem, 1fr));
+  align-items: center;
+  text-align: center;
+}
+.menu .idiomas img.active {
+  opacity: 0.5;
+}
+.menu .idiomas img {
+  width: 1.5rem;
+}
+.menu .idiomas img:hover {
+  opacity: 0.5;
+}
+
+/*Pie de pagina */
+
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    right: -10px;
+    left: -10px;
+    width: 100%;
+    color: var(--white);
+    padding: 20px 20px;
+    font-size: 18px;
+    background-color: var(--black);
+}
+
+
+
+
+
+/** Media Queries **/
+@media only screen and (min-width: 48rem) {
+  .menu {
+    grid-template-columns: 10% auto 10%;
+  }
+  .menu .contenedor-menu a {
+    font-size: 1.1rem;
+  }
+  .menu .idiomas {
+    display: grid;
+    flex-direction: column;
+  }
+
+}
